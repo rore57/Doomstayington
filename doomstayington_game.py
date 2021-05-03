@@ -361,11 +361,11 @@ def winner_yay():
 #----------------------------------------------------------------idek I think quit outcomes-------------------------------------------------------------
 def quit_game():
     print('>.>')
-    break
+
 
 def quitgame():
     print('^w^')
-    break
+
 #----------------------------------------------------------------technically impossible outcome-------------------------------------------------------------
 def error_quit():
     print('how did you get here?')
