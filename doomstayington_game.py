@@ -16,7 +16,7 @@ def the_start():
     print('The path ahead will likely be fierce and unforgiving')
     print('But with equipped with your knife and revolver with 3 bullets you are determined')
     print('Ahead lies a forest, you see smoke coming from deep within the trees')
-    print('To your left is a town, with a hospital and a gun store')
+    print('To your left is a town, with a hospital a gun store')
     print('To your right are tall mountains that are completely unclimbable')
 
     while True:
@@ -361,9 +361,11 @@ def winner_yay():
 #----------------------------------------------------------------idek I think quit outcomes-------------------------------------------------------------
 def quit_game():
     print('>.>')
+    break
 
 def quitgame():
     print('^w^')
+    break
 #----------------------------------------------------------------technically impossible outcome-------------------------------------------------------------
 def error_quit():
     print('how did you get here?')
