@@ -356,7 +356,7 @@ def winner_yay():
     else:
         print('good job surviving!')
 
-the_start()
+
     
 #----------------------------------------------------------------idek I think quit outcomes-------------------------------------------------------------
 def quit_game():
@@ -365,11 +365,12 @@ def quit_game():
 def quitgame():
     print('^w^')
 #----------------------------------------------------------------technically impossible outcome-------------------------------------------------------------
-
 def error_quit():
     print('how did you get here?')
     print('congrats you broke the game lol, you must kill the program and re-run sorry >.>')
-
+    
+the_start()
+    
 #credits:
 #rory - me!
 #whoever made randrange that/s cool
