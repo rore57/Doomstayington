@@ -20,7 +20,7 @@ def the_start():
     print('To your right are tall mountains that are completely unclimbable')
 
     while True:
-        print('\nHead into the forrest press 1')
+        print('\nHead into the forest press 1')
         print('\nHead towards the town press 2')
 
         ithestart = input('\nEnter Here: ')
