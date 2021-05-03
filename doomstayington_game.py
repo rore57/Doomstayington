@@ -373,5 +373,5 @@ def error_quit():
 #credits:
 #rory - me!
 #whoever made randrange that/s cool
-#thanks tony for teaching me python and for giving me a formatting idea for my first ever python game!!
+#thanks tony for teaching me python!
 #I couldn't have done it without you
