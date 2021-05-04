@@ -1,26 +1,27 @@
 from random import randrange
 
-''' idk some text based adventure game with monsters '''
+''' text based adventure game w/ monsters '''
 
 #----------------------------------------------------------------start--------------------------------------------------------------
 
-print('press q to quit at anytime')
+print('welcome to doomstayington!')
 name = input('\nYou are a survivor, what is your name: ')
 print(name + ' get ready for a dangerous adventure')
 
 #----------------------------------------------------------------game body------------------------------------------------------------
 
 def the_start():
+    print('\n')
     print('\nAs you open the hatch a bright light hits you')
     print('Your friend down in the bunker is injured, you need to find supplies or help')
     print('The path ahead will likely be fierce and unforgiving')
     print('But with equipped with your knife and revolver with 3 bullets you are determined')
     print('Ahead lies a forest, you see smoke coming from deep within the trees')
-    print('To your left is a town, with a hospital a gun store')
+    print('To your left is a town, with a hospital and a store')
     print('To your right are tall mountains that are completely unclimbable')
 
     while True:
-        print('\nHead into the forest press 1')
+        print('\nHead into the to forest press 1')
         print('\nHead towards the town press 2')
 
         ithestart = input('\nEnter Here: ')
@@ -34,7 +35,7 @@ def the_start():
             #elif ithestart == '3':
             #    right()
             #elif ithestart == 'q': 
-                quitgame()
+            #    quitgame()
             else:
                 print('This input is invalid try again')
                 break
@@ -60,9 +61,9 @@ def forward():
             elif iencounter == '3':
                 run_gootenburger()
                 '''
-            elif iencounter == 'q':
-                quitgame()
-            else:
+            #elif iencounter == 'q':
+            #    quitgame()
+            #else:
                 print('\nInvalid input try again!')
                 break
 
@@ -236,7 +237,7 @@ def return_home():
             if bollybop == '1':
                 heinzbraften_death()
             if bollybop == '2':
-                run_away_pansy()
+                run_away()
 
 
 def secondary_hospital_loot():
@@ -278,8 +279,6 @@ def gootenburger_killed():
                 print('\nInvalid input please try again')
                 break
         
-def gootenburger_escape():
-    print('escape')
 
 
 def hide_wantingbontingbollybop():
@@ -318,63 +317,56 @@ def heinzbraften_death():
     print('hearing the commotion, your friend exits the bunker and sees what happened, you saved their life, and they vow to continue to live in this harsh world for your sake')
     game_over()
 
-def run_away_pansy():
+def run_away():
     print('you turn your back and head back to the town, as you hear the heinzbraften rip open the hatch and enter the bunker')
     print('you don\'t turn back, you can\'t, the guilt overwhealms you but you keep pushing forward, hoping to survive by yourself in this lonely world')
-    bad_ending()
+    game_over()
 #----------------------------------------------------------------game over/win-------------------------------------------------------------
 
 def game_over():
-    print('you died, game over')
-    print('would you like to play again?')
-    answer = input('press 1 to play again! press q to quit')
-    if answer == '1':
+    print('\ngame over, you lose')
+    print('\npress 1 to play again!')
+    print('press q to crash the game and quit')
+    ipks = input('\nEnter here: ')
+    if ipks == '1':
         the_start()
-    elif answer == 'q':
-        quit_game()
+    elif ipks == 'q':
+        crash_game()
     else:
-        print('thanks for playing!')
+        print('\nInvalid input please try again')
 
-def bad_ending():
-    print('game over')
-    print('would you like to play again?')
-    answer = input('press 1 to play again! press q to quit')
-    if answer == '1':
-        the_start()
-    elif answer == 'q':
-        quit_game()
-    else:
-        print('you left your friend behind if you see this you should replay and not leave them meanie')
 
 def winner_yay():
-    print('thank you for playing! I hope you enjoyed!')
-    answer = input('press 1 to play again! press q to quit')
-    if answer == '1':
+    print('\ncongrats you win!')
+    print('\npress 1 to play again!')
+    print('press q to to crash the game and quit')
+    ipks = input('\nEnter here: ')
+    if ipks == '1':
         the_start()
-    elif answer == 'q':
-        quit_game()
+    elif ipks == 'q':
+        crash_game()
     else:
-        print('good job surviving!')
+        print('\nInvalid input please try again')
 
 
-    
-#----------------------------------------------------------------idek I think quit outcomes-------------------------------------------------------------
-def quit_game():
-    print('>.>')
 
+#----------------------------------------------------------------game crashed by quitting-------------------------------------------------------------
+'''
 
-def quitgame():
-    print('^w^')
+def crash_game():
 
+this is quoted out, as the game needs to crash in order for it to stop running lol
+
+'''
 #----------------------------------------------------------------technically impossible outcome-------------------------------------------------------------
+
 def error_quit():
     print('how did you get here?')
     print('congrats you broke the game lol, you must kill the program and re-run sorry >.>')
-    
+
 the_start()
-    
 #credits:
 #rory - me!
 #whoever made randrange that/s cool
-#thanks tony for teaching me python!
-#I couldn't have done it without you
+#thanks tony for teaching me python and for giving me a formatting idea for my first ever python game!!
+#calmducky my student for being my test dummy
