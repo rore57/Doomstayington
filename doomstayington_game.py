@@ -137,7 +137,7 @@ def town_teim():
     print('\nThere is something up with these people, better to not join up with them and turn around to head towards the town instead')
     print('as you head towards the town you find a dead body that has pieces torn out of it')
     print('it doesn\'t look like a creature did this, it almost looks surgically done, you pick up the pace as you head for a clearing that leads to the town')
-    left()
+    left2()
 
 
 def left():
@@ -256,6 +256,31 @@ def home_with_shotgun():
     print('you breath a sigh of relif, and turn the hatch as you decend back into darkness, knowing it is all over for now')
     winner_yay()
 
+def left2():
+    print('\nYou enter the town, it is quiet and you see a store and a hospital')
+    print('\nDo you loot the hospital or loot the store?')
+
+    while True:
+        print('\nTo loot the hospital press 1')
+        print('\nTo loot the store press 2')
+        iloot = input('\nEnter here: ')
+
+        while True:
+            if iloot == '1':
+                loot_hospital2()
+            elif iloot == '2':
+                loot_store()
+            else:
+                print('\nInvalid input try again')
+                break
+def loot_hospital2():
+    print('\nAs you reach the hospitals glass doors you smash through them and head in')
+    print('you head into the pharmacy section and find painkillers and antibiotics')
+    print('this would be perfect for your friend back in the bunker, as you turn aroud you hear something slam the doors to the operating room open')
+    print('it is a wantingbontingbollybop, they are extremely dangerous and with no ammo you have no way to fight it')
+    print('you hide hoping it will not find you, but their keen sense of smell allows them to find you, and it eats you alive')
+    game_over()
+
 #----------------------------------------------------------------deaths/kills-------------------------------------------------------------
 def gootenburger_death():
     print('the gootenburger was too strong and fast, your attempts were futile against the beast and it has eaten you alive')
@@ -368,5 +393,4 @@ the_start()
 #credits:
 #rory - me!
 #whoever made randrange that/s cool
-#thanks tony for teaching me python and for giving me a formatting idea for my first ever python game!!
-#calmducky my student for being my test dummy
+#also thank you tony for the formatting idea
