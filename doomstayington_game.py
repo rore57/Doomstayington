@@ -292,14 +292,14 @@ def gootenburger_killed():
 
     while True:
         print('if you want to continue into the forest press 1')
-        print('if you want to head to the town and loot the hospital press 2')
+        print('if you want to leave the forest and head to the town press 2')
         baklava = input('\nEnter here: ')
 
         while True:
             if baklava == '1':
                 further_forest()
             elif baklava == '2':
-                loot_hospital()
+                left2()
             else:
                 print('\nInvalid input please try again')
                 break
